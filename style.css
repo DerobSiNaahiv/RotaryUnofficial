@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    scroll-behavior: smooth
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    min-height: 10vh;
+    min-width: 100vw;
+    background-color: rgba(255, 255, 255, 0.175);
+    padding-bottom: 2vh;
+}
+
+.ulnav{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.ulnav li{
+    padding: 4px 6px 4px 15px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link:hover{
+    background-color: #FCC200;
+    transition: 0.5s;
+    border-radius: 25px;
+    color: #CC0000;
+}
+
+.link:not(hover){
+    transition: 0.5s;
+}
+
+.nav1{
+    align-self: flex-start;
+}
+
+.nav2{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2.5vh;
+}
+
+#logo {
+    height: 10vh;
+    padding-top: 15px;
+}
+
+.parralax{
+    background-image: url(image2.jpg);
+    min-height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    column-gap: 10vh;
+}
+
+.contentf{
+    min-height:75vh;
+    background-color: maroon;
+    color: #FCC200;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-content:center;
+    flex-direction: column;
+    
+}
+
+.contentf h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 4vh;
+}
+
+
+#takeaction{
+    height: 8vh;
+    width: 15vw;
+    border-radius: 5vw;
+    border-color: white;
+    border-width: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.333);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.85vw;
+    color: white;
+    margin-top: 3vh;
+    font-weight: bold;
+}
+
+#homeh{
+    height: 10vh;
+    width: 100vw;
+    font-size: 7vh;
+    margin-bottom: 3vh;
+    overflow: hidden;
+}
+
+#homeh2{
+    height: 10vh;
+    width: 75vw;
+    font-size: 3vh;
+    overflow: hidden;
+}
+
+#takeaction:hover{
+    background-color: white;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+#takeaction:not(hover){
+    transition: 0.3s;
+}
+
+#takeaction a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#takeaction:hover ~ #a{
+    color: black;
+    transition: 0.3s;
+}
+
+#text1{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 55vw;
+    margin-bottom: 4vh;
+}
+
+#text2{
+    font-size: 18px;
+    max-width: 55vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 4vh;
+}
+
+#text2 a{
+    color: #FCC200;
+}
+
+#text3 {
+    font-size: 23px;
+    max-width: 55vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5vh;
+    margin-top: 8vh;
+    align-self: flex-start;
+    margin-left: 20vw;
+}
+
+#text4{
+    font-size: 19px;
+    max-width: 55vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: flex-start;
+    margin-left: 20vw;
+}
+
+#text4 a{
+    color:#FCC200;
+}
+
+#takeaction:hover #a{
+    color: black;
+    transition: 0.3s;
+}
+
+#ogwebsite{
+    height: 8vh;
+    width: 15vw;
+    border-radius: 5vw;
+    border-color: white;
+    border-width: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.175);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.85vw;
+    font-weight: bold;
+    color: white;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+#ogweb{
+    text-decoration: none;
+    color: white;
+
+}
+
+#ogwebsite:hover{
+    background-color:white;
+    transition: 0.3s;
+}
+
+#ogwebsite:not(hover){
+    transition: 0.3s;
+}
+
+#ogwebsite:hover #ogweb{
+    color: black;
+    transition: 0.3s;
+}
+
+.footer{
+    height: 10vh;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#social1{
+    filter: grayscale(1);
+    height: 5vh;
+    width: 5vh;
+    margin: 0.5vh;
+}
+
+#social1:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+#social1:not(hover) {
+    transition: 0.5s;
+}
+
+#social2{
+    filter: grayscale(1);
+    height: 5vh;
+    width: 5vh;
+    margin: 0.5vh;
+}
+
+#social2:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+#social2:not(hover) {
+    transition: 0.5s;
+}
+
+#footer1{
+    color: white;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-right: 2vw;
+}
+
+#footer1:hover{
+    text-decoration: underline;
+}
+
+#body1{
+    background-image: url(pexels-ylanite-koppens-843226.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.nav21{
+    align-self: flex-start;
+    align-content: center;
+    display:flex;
+    line-height: 10vh;
+}
+
+.nav12{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 2.5vh;
+}
+
+.nav3 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    min-height: 10vh;
+    min-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding-bottom: 2vh;
+}
+
+.ulnav2{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.ulnav2 li{
+    padding: 4px 6px 4px 15px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#adpanel{
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 2vh;
+}
+
+#adpanel:hover {
+    text-decoration: underline;
+}
+
+.contactform{
+    display:flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    justify-content: center;
+    justify-items: center;
+    backdrop-filter: blur(50px);
+    height: 45vh;
+    width: 20vw;
+    padding: 5vh;
+    border-radius: 20px;
+}
+
+.input{
+    background-color: rgba(0, 0, 0, 0.35);
+    border: none;
+    border-bottom: 2px solid yellow;
+    text-align: center;
+    min-height: 2vh;
+    min-width: 15vw;
+}
+
+#submit{
+    color: black;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.35);
+    border: none;
+    border-bottom: 2px solid yellow;
+    border-radius: 5px;  
+    min-height: 3.4vh;
+    min-width: 10vh;
+    max-width: 10vw;
+    font-size: 2vh; 
+    align-self: center;
+}
+
+#msg {
+    min-height: 20vh;
+}
+
+#submit:hover{
+    background-image: radial-gradient(rgba(0,0,0,0.35),white);
+    color: white;
+    transition: 0.4s;
+}
+
+#submit:not(hover){
+    transition: 0.4s;
+}
+
+#body3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#body2{
+    background-color: rgb(94, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

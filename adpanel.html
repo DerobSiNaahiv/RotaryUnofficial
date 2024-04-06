@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin passthrough</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body id="body3">
+
+        <form>
+            <input type="password" placeholder="Enter Root Pass" id="pass">
+            <input type="button" value="Enter" id="rootsubmit">
+        </form>
+
+        <script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCHgy_U6tGQhzGFKCdvWB-qHVZgMwdaPRc",
+  authDomain: "rotaryproject-5d2a3.firebaseapp.com",
+  databaseURL: "https://rotaryproject-5d2a3-default-rtdb.firebaseio.com",
+  projectId: "rotaryproject-5d2a3",
+  storageBucket: "rotaryproject-5d2a3.appspot.com",
+  messagingSenderId: "988368407906",
+  appId: "1:988368407906:web:374e6b16a2f66118fab03b"
+};
+
+const app = initializeApp(firebaseConfig);
+
+const db = getDatabase(app);
+
+document.getElementById("rootsubmit").addEventListener("click", comparedata)
+
+function comparedata(){
+    const userRef = ref(db,'rootpass');
+
+        get(userRef).then((snapshot)=> {
+            snapshot.forEach((childSnapshot)=> {
+                if (document.getElementById("pass").value == childSnapshot.val()){
+                    window.location.href="adpanel1.html";
+                } else{
+                    alert("Wrong Password, Please try again!")
+                    childSnapshot = "";
+                }
+            });
+        })
+}
+
+
+
+        </script>
+    </body>
+</html>
